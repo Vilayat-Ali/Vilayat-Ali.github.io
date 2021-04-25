@@ -1,0 +1,87 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color:#292b2c;
+}
+
+
+@media all and (min-width: 745px){
+        .banner{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 100vw;
+            background-color: #d5e6d7;
+            height: 25vh;
+        }
+        
+        .imge_block{
+            width:15vw;
+        }
+
+        .imge_block img{
+            width: inherit;
+            height: inherit;
+            object-fit: cover;
+        }
+
+        nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            background-color: #a5a8a5;
+        }
+
+        nav a{
+            font-size: 3vw;
+            text-decoration: none;
+            color: black;
+        }
+        
+        nav a:nth-child(1){
+            background-color: #292b2c;
+            color: #fff;
+        }
+
+}
+
+@media all and (max-width: 745px){
+    .banner{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100vw;
+        background-color: #d5e6d7;
+    }
+
+    .imge_block{
+        width:50vw;
+    }
+
+    .imge_block img{
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: #a5a8a5;
+    }
+
+    nav a{
+        font-size: 6vw;
+        text-decoration: none;
+        color: black;
+    }
+    
+    nav a:nth-child(1){
+        background-color: #292b2c;
+        color: #fff;
+    }
+}

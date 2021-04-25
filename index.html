@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CHD</title>
+    <link rel="Stylesheet" href="./Style/nav.css">
+    <link rel="stylesheet" href="./Style/index.css">
+  </head>
+  <body>
+      <!-- NAV -->
+      <div class="banner">
+        <div class="imge_block">
+          <img src="./Media/logo.png">
+        </div>
+      </div>
+      <nav>
+        <a href="./index.html">Home</a>
+        <a href="./bed.html">Search Hospitals for beds</a>
+        <a href="./about.html">About</a>
+      </nav>
+      <!-- NAV -->
+
+      <!-- Adding form -->
+      <div class="body_of_site">
+
+        <div class="container-data">
+          <div class="title">
+            <p>LIVE STATS</p>
+          </div>
+          <div class="media_dash">
+            <p>TOTAL CASES: <span id="total">fetching data</span></p>
+            <p>RECOVERED: <span id="reco">fetching data</span></p>
+            <p>DEATH: <span id="death">fetching data</span></p><br/>
+            <p>Updated latest by:<br/><span id="lt_up">fetching data</span></p>
+          </div>
+        </div>
+
+        <div class="container-form">
+          <div class="title">
+            <p>SEARCH</p>
+          </div>
+          <form action="./index.html" method="post">
+          <label for="City">Enter your City: </label>
+          <input type="text" id="City" name="City" placeholder="Enter your city..." required/>
+          
+          <label for="Necessity">Requirement: </label>
+          <input type="text" id="Necessity" name="Necessity" placeholder="i.e. Oxygen tanks,etc." required/>
+            
+          <label for="Necessity" id="#search">Search: </label>
+
+          <input type="submit" value="Search for Help">
+        </form>
+        </div>
+
+      </div>
+      <!-- Adding form -->
+      <footer>
+        <p class="footer-text">For additional technical support: <a href="https://vilayatcodemysite@gmail.com">Contact</a></p>
+      </footer>
+      
+
+      <script src="./Scripts/app.js"></script>
+      <script src="./Scripts/api.js"></script>
+      <script src="./Scripts/form.js"></script>
+</body>
+</html>
